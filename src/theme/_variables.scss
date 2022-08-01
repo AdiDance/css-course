@@ -1,0 +1,21 @@
+$body-bg: #0c0222; 
+$body-color: #fff;
+$primary: #e714d2;
+$secondary: #115ed1;
+
+$theme-colors: (
+  'primary':    $primary,
+  'secondary':  $secondary,
+);
+
+// typography
+$font-family-base: 'Montserrat';
+
+// navbar
+$navbar-dark-color: rgba(255, 255, 255, 0.5);
+$nav-link-font-size: 1.5rem;
+
+$navbar-bg: rgba(255, 255, 255, 0.15);
+
+
+$todays-color: #3356ee;

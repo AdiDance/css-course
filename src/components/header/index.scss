@@ -1,0 +1,15 @@
+@import '../../theme/utils';
+
+.navbar {
+    background: $navbar-bg;
+    backdrop-filter: blur(127px);
+
+    .header-buttons {
+        display:flex;
+        align-items: center;
+
+        .header-button:not(:first-child) {
+            margin-left: 40px;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@import '../../theme/utils';
+
+$header-button-border: 3px;
+$header-button-size: 60px;
+
+
+.header-button {
+    background: linear-gradient(182.17deg, rgba(231, 20, 210, 0.63) -7.58%, rgba(17, 94, 209, 0.63) 116.18%);
+    border:0;
+    border-radius: 100px;
+    padding: $header-button-border;
+    width: 60px;
+    height: 60px;
+
+    &-outer {
+        border-radius: 100px;
+        background-color: $body-bg;
+        width: #{$header-button-size - 2 * $header-button-border};
+        height: #{$header-button-size - 2 * $header-button-border};
+    }
+
+    &-inner {
+        border-radius: 100px;
+        background-color: $navbar-bg;
+        width: #{$header-button-size - 2 * $header-button-border};
+        height: #{$header-button-size - 2 * $header-button-border};
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+
+        svg, img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        img {
+            border-radius: 100px;
+            
+        }
+
+    }
+}

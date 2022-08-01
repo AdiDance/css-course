@@ -1,0 +1,96 @@
+@import '../../theme/utils';
+
+.nft-card {
+  backdrop-filter: blur(18.7907px);
+  background: rgba(255, 255, 255, 0.096);
+  border: 4px solid rgba(255, 255, 255, 0.26);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding: 16px;
+
+  @include media-breakpoint-up(md) {
+    padding: 23px 23px 16px;
+  }
+
+  &-image {
+    margin-bottom: 20px;
+    padding-top: 100%;
+    position: relative;
+
+    img {
+      border-radius: 20px;
+      height: 100%;
+      left: 0;
+      object-fit: cover;
+      object-position: center;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  } 
+
+  &-title {
+    font-size: 18px;
+    font-weight: 500;
+    overflow: hidden;
+    padding-right: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    @include media-breakpoint-up(md) {
+      font-size: 22px;
+    }
+
+  }
+
+  &-badge {
+    align-items: center;
+    background: $primary;
+    border-radius: 5px;
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 1px 14px;
+    text-transform: uppercase;
+
+    &.sold {
+      background-color: $secondary;
+    }
+  }
+
+  &-price {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  &-amount {
+    font-size: 114%;
+    font-weight: 500;
+  }
+
+  &-history {
+    color: $white;
+    font-size: 10px;
+    font-weight: 400;
+    position: relative;
+
+    &:hover {
+      color: $primary;
+    }
+
+    &::before {
+      background-color: red;
+      bottom: 0;
+      content: '';
+      height: 3px;
+      position: absolute;
+      width: 100%;
+    }
+
+  }
+
+
+}
+
+

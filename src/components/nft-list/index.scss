@@ -1,0 +1,27 @@
+
+@import '../../theme/utils';
+.nft-list {
+    
+    .col-special {
+        flex: 0 0 auto;
+        padding:5px;
+
+
+        @include media-breakpoint-up(sm){
+            padding: 10px;
+        }
+
+        @include media-breakpoint-up(md){
+            width: 33.33%;
+        }
+
+     
+        @include media-breakpoint-up(xl){
+            width: 20%;
+         }
+        
+    }
+
+
+}
+

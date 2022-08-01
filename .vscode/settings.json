@@ -1,0 +1,4 @@
+{
+    "eslint.options": { "configFile": ".eslintconfig" },
+    "stylelint.configFile": ".stylelintconfig"
+  }

@@ -1,0 +1,22 @@
+.effect {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top:0;
+    z-index: -1;
+
+    &-element {
+        width: 1178px;
+        height: 1178px;
+
+        background: linear-gradient(182.17deg, rgba(231, 20, 210, 0.66) -7.58%, rgba(17, 94, 209, 0.66) 116.18%);
+        filter: blur(656px);
+
+        left: 100%;
+        position: absolute;
+        top: 0;
+        transform: translateX(-50%);
+  
+    }
+}
